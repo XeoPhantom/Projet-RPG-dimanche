@@ -12,57 +12,209 @@
       <body>
 <!-- Start your code here -->
 
-       <Top>  
-        <Stats> 
-          <name> 
-            <div> Je </div> <div> suis </div>
-            <div> Mauvais </div> <div> DSL </div>
-          </name>
-        
-          <health>
-            <div> HP 340 </div> <div> HP 200 </div>
-            <div> HP 156 </div> <div> HP 85 </div>
-          </health>
-        
-          <mana>
-            <div> M 462 </div> <div> M 687 </div>
-            <div> M 364 </div> <div> M 400 </div>
-          </mana>
-        
-          <level> 
-            <div> L 40 </div> <div> L 42 </div>
-            <div> L 12 </div> <div> L 18 </div>
-          </level>
-         </Stats>
-        </Top>
-            
+        <div class="zone_personnages zone_monstres"> 
 
-      <Bottom> 
-        <action>
-          <a href="#" class="myButton1">Attaque</a>
-          <a href="#" class="myButton2">coup spéciaux</a>
-          <a href="#" class="myButton">défense</a>
-          </action>
-        <Description>
-          <troll>
-            <div id> 
-            <img src="Troll.png" alt="troll">
-            <meta charset="utf-8"/>
-            <input type="button" value="l'enfant de ton cousin et ta soeur ABBOBINATION"/>
+            <button disabled class="personnage" id="butonMonstre1">
+               
+                <img src="images/idle_demon.gif" id="monstre_1"  class="imgPerso">   
+                  <br>
+                 <div id="monstre1stats" >
+                  
+                   <div> Demon</div> <br>
+                    <label class="labelAvancement"  id="monstre1pvNumber">200</label>
+                      <progress  value="200" max="200" class="avancement" id="monstre1pv"></progress>
+                      
+                  </div>  
+            </button>
 
-            <bee>
-               <img src="bee.png" alt="bee">
-            <meta charset="utf-8"/>
-            <bat>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+            <button disabled class="personnage" id="butonMonstre2">
+              <img src="images/idle_dragon.gif" id="monstre_2" class="imgPerso">   
+                <br>
+                <div id="monstre2stats" >
+                  <div> Dragon</div> <br>
+                    <label class="labelAvancement" id="monstre2pvNumber">200</label>
+                      <progress  value="200" max="200" class="avancement" id="monstre2pv"></progress>
+                    </div>
+            </button>
+
+            <button disabled class="personnage" id="butonMonstre3">
+              <img src="images/idle_lizard.gif" id="monstre_3"  class="imgPerso">  
+              <br>
+                <div id="monstre3stats" >
+                  <div>Lezard</div> <br>
+                    <label class="labelAvancement" id="monstre3pvNumber">200</label>
+                      <progress  value="200" max="200" class="avancement" id="monstre3pv"></progress>
+                    </div>
+              </button>
+
+          </div>        
+
+
+
+
+
+
+
+
+          <div class="zone_personnages zone_fighter">
+
+     <div id="personnage1" class="personnage">
+
+           <button  onclick="clickplayer('personnage1')" class="personnage" id="butonPerso1" enabled>
+              <img src="images/idle_perso1.gif"   id="perso1"  class="imgPerso">
+                <div>Viking <br>
+                   <label class="labelAvancement" id="player1pvnumber">100</label>
+                   <progress  value="100" max="100" class="avancement" id="player1pv"></progress>
+                </div>  
+                 Dégats: 17-19 <br> Shield Actif [+30]: <span id="shieldPlayer1">0</span>% <br>  Mana  :<span id="manaPlayer1" >100</span> <br> ----[SOIN]---- : <br>Coût (mana) : 60 <br> Heal : 35
+            </button>
+
+        <br/>
+
+          <button onclick="attackperso1()"  class="buttonAction" id="buttonattaqueperso1" enabled>
+            <div>
+              <img type="image" src="images/attack_button.png" class="action" >
+            </div>
+          </button>
 
            
-          </troll>
-        </Description>  
-        <space> 
-          <p></p>
-        </space>
-       </Bottom>
-<!-- End your code here -->
+          <button onclick="defenseperso1()" class="buttonAction" id="buttondefenseperso1" enabled>
+            <div>
+              <img type="image" src="images/shield_button.png" class="action" >
+            </div>
+          </button>
+              
+
+          <button onclick="specialperso1()" class="buttonAction" id="buttonspecialperso1" enabled>
+            <div>
+              <img type="image"  src="images/heal.png" class="action" >
+            </div>
+          </button>
+    </div>
+      
+
+
+
+
+
+
+    <div id="personnage2" class="personnage">
+
+
+           <button  onclick="clickplayer('personnage2')" id="butonPerso2" class="personnage" enabled>
+              <img src="images/idle_perso2.gif"   id="perso2" class="imgPerso">
+                <div>Sorcière <br>
+                   <label class="labelAvancement" id="player2pvnumber">100</label>
+                   <progress  value="100" max="100" class="avancement" id="player2pv"></progress>
+                </div>  
+                   Dégats: 15 <br> Shield Actif [+35]: <span id="shieldPlayer2">0</span>% <br>  Mana  :<span id="manaPlayer2" >100</span> <br>----[Foudre]---- <br> Coût (mana) : 80 <br>Degats : 75
+            </button>
+          <br/>
+          <button onclick="attackperso2()"  class="buttonAction" id="buttonattaqueperso2">
+            <div>
+              <img type="image" src="images/attack_button.png" class="action" >
+            </div>
+          </button>
+
+           
+           <button onclick="defenseperso2()" class="buttonAction" id="buttondefenseperso2"><div><img type="image" src="images/shield_button.png" class="action" ></div></button>
+              
+
+           <button onclick="specialperso2()" class="buttonAction" id="buttonspecialperso2"><div><img type="image"  src="images/critiqueDamage.png" class="action" ></div></button>
+  </div>
+
+
+
+
+
+
+
+
+    <div id="personnage3" class="personnage">
+
+            <button  onclick="clickplayer('personnage3')" id="butonPerso3" class="personnage" enabled>
+              <img src="images/idle_perso3.gif"   id="perso3" class="imgPerso">
+                <div>Assassin <br>
+                   <label class="labelAvancement" id="player3pvnumber">100</label>
+                   <progress  value="100" max="100" class="avancement" id="player3pv"></progress>
+                </div>  
+                 Dégats: 6-14  <br> Shield Actif [+48]: <span id="shieldPlayer3">0</span>%  <br> Mana :<span id="manaPlayer3" >100</span> <br>----[Tempête]---- : <br>Coût (mana) : 80 <br> Dégats : 30
+ 
+            </button>
+<br/>
+
+
+          <button onclick="attackperso3()"  class="buttonAction" id="buttonattaqueperso3">
+            <div>
+              <img type="image" src="images/attack_button.png" class="action" >
+            </div>
+          </button>
+           
+           <button onclick="defenseperso3()" class="buttonAction" id="buttondefenseperso3"><div><img type="image" src="images/shield_button.png" class="action" ></div></button>
+              
+
+           <button onclick="specialperso3()" class="buttonAction" id="buttonspecialperso3"><div><img type="image"  src="images/storm.png" class="action" ></div></button>
+  </div>
+
+
+
+
+
+
+
+
+      <div id="personnage4" class="personnage">
+
+            <button  onclick="clickplayer('personnage4')" id="butonPerso4" class="personnage"enabled>
+              <img src="images/idle_perso4.gif"   id="perso4" class="imgPerso">
+                <div>Chevalier <br>
+                   <label class="labelAvancement" id="player4pvnumber">100</label>
+                   <progress  value="100" max="100" class="avancement" id="player4pv"></progress>
+                </div> 
+
+                   Base Damage: 10-30 <br> Shield Actif [+27]: <span id="shieldPlayer4">0</span>% <br>  Mana :<span id="manaPlayer4" >100</span> <br>----[Potion Magique]---- <br> Coût (mana) : 50 <br>Buff : 50%
+       
+
+
+
+
+     
+
+
+
+
+     
+  <div class="interfaceaction">
+         <action>
+ <div class="player2action">
+          <button onclick="attackperso2()" id="attackbuttonperso2" disabled><div><img type="image"  src="images/attack_button.png" width=50px, height=50px></div></button>
+           
+           <button onclick="defenseperso2()" id="defensebuttonperso2" disabled><div><img type="image"  src="images/shield_button.png" width=50px, height=50px></div></button>
+              
+           <button onclick="specialperso2()" id="defensebuttonperso2" disabled><div><img type="image" src="images/special_button.png" width=50px, height=50px></div></button>
+  </div>
+<div class="player3action">
+          <button onclick="attackperso()" id="attackbuttonperso3" disabled><div><img type="image"  src="images/attack_button.png" width=50px, height=50px></div></button>
+           
+           <button onclick="defenseperso()" id="defensebuttonperso3" disabled><div><img type="image" src="images/shield_button.png" width=50px, height=50px></div></button>
+              
+           <button onclick="specialperso()" id="defensebuttonperso3" disabled><div><img type="image"  src="images/special_button.png" width=50px, height=50px></div></button>
+ </div>
+<div class="player4action">
+          <button onclick="attackperso()" id="attackbuttonperso4" disabled><div><img type="image"  src="images/attack_button.png" width=50px, height=50px></div></button>
+           
+           <button onclick="defenseperso()" id="defensebuttonperso4" disabled><div><img type="image" src="images/shield_button.png" width=50px, height=50px></div></button>
+              
+           <button onclick="specialperso()" id="defensebuttonperso4" disabled><div><img type="image" src="images/special_button.png" width=50px, height=50px></div></button>
+ </div>
+          </action>
+</div>
+-->
+
+    <div id="actionMonstre">Tour des Monstres</div>  
+    <div id="actionJoueur">Tour des Joueurs</div>  
+
+
+
       </body>
 </html>
