@@ -1,179 +1,191 @@
+#butonMonstre1{
+  background-color: rgba(255,255,255,0);
 
-Top{
-  display: flex;
 }
 
-Orders {
-  color: black;
-  border: 2px solid black;
-  display: flex;
-  justify-content: space-around;
-  height: 11%;
-  width: 15%;
+#butonMonstre2{
+  background-color: rgba(255,255,255,0);
 }
 
-Stats {
-  display: flex; 
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height : 25%;
+#butonMonstre3{
+  background-color: rgba(255,255,255,0);
 }
 
-name{
-  font-size: 25px;
-  text-decoration: underline;
-  border: 2px solid black ;
-  display: flex;
-  justify-content: space-around;
-  height: 60%;
-  width: 80%;
-  color :  black;
+
+
+#butonPerso1{
+    background-color: rgba(255,255,255,0.0);
 }
 
-health{
-  font-size: 20px;
-  border: 2px solid black;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  height: 100%;
-  width: 80%; 
-  color: green;
+#butonPerso2{
+    background-color: rgba(255,255,255,0.0);
 }
 
-mana{
-  font-size: 20px;
-  border: 2px solid black;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap:  wrap;
-  height: 100%;
-  width: 80%; 
-  color: #8A2BE2;
+
+#butonPerso3{
+    background-color: rgba(255,255,255,0.0);
 }
 
-level{
-  font-size: 20px;
-  border: 2px solid black;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  height: 100%;
-  width: 80%;
-  color: orange;
+#butonPerso4{
+    background-color: rgba(255,255,255,0.0);
 }
 
-action{
-  font-size: 30px;
-  border: 2px solid black;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 100%;
-  width: 40%;
+
+
+
+#monstre_1:hover ~ #monstre1stats{
+  opacity: 1;
+
+}
+
+#monstre1stats{
+  opacity: 0.0;
   color: black;
 }
 
-troll{ 
-       src="Troll.png" alt="troll">
-  font-size: 20px;
-  border: 2px solid black;
-  display: flex;
-  align-items: flex-start;
-  color:  black;
-  height: 60%;
-  width: 100%;
+
+
+
+
+
+
+
+#monstre_2:hover ~#monstre2stats{
+  opacity: 1;
 }
 
-Bottom{
+#monstre2stats{
+  opacity: 0.0;
+  color: black;
+}
+
+
+
+
+
+#monstre_3:hover ~#monstre3stats{
+  opacity: 1;
+}
+
+#monstre3stats{
+  opacity: 0.0;
+  color: black;
+}
+
+/*------------------------------------------------------------------------------*/
+
+
+
+
+
+/*------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+.personnage{
+  margin : 0 auto 0 auto;
+border: 0px;
+}
+
+.imgPerso{
+  width:200px;
+  height:200px;
+
+}
+
+.zone_personnages{
+  width: 95%;
   display: flex;
-  justify-content: space-between;
-  width: 50%;
+  text-align: center;
+  
+}
+
+.zone_monstres{
+  height:50%;
+  background-color: rgba(255,0,0,0.);
+}
+.zone_fighter{
   height: 50%;
+  background-color: rgba(0,0,255,0.0);
+}
+.action{
+  width:30px;
+  height:30px;
+  opacity:1;
 }
 
-space{
-  display: flex;
-  justify-content: space-around;
+.buttonAction{
+  border-radius: 40%;
+  display: none;
 
-  height: 60%;
-  width: 30%;
+}
+
+#infoButton:hover ~#infos{
+ opacity: 1;
+}
+
+#infoButton{
+width: 4%;
+height: width;
+top: 0%;
+left: 0%;
+
+}
+
+#infos{
+  font-size: 15;
+  position: absolute;
+  top: 0%;
+  opacity: 0;
+  background-color: white;
+}
+
+
+#gameOver{
+  width: 100%;
+  height: 100%;
+}
+
+.avancement{
+
+ background-color: green;
+}
+
+
+#actionMonstre{
+
+  font-size:  250px;
+
+    margin: 0;
+    background: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
+
+
+#actionJoueur{
+
+  font-size:  250px;
+  
+    margin: 0;
+    background: blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
 }
 
 body{
   background-image: url("sky1.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-}
-
-.myButton1 {
-	box-shadow:inset 0px 39px 0px -24px #eb5beb;
-	background:linear-gradient(to bottom, #e320cc 5%, #d13eb4 100%);
-	background-color:#e320cc;
-	border-radius:11px;
-	border:4px solid #ffffff;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:16px;
-	padding:9px 15px;
-	text-decoration:none;
-	text-shadow:0px 1px 50px #b23e35;
-}
-.myButton:hover1 {
-	background:linear-gradient(to bottom, #d13eb4 5%, #e320cc 100%);
-	background-color:#d13eb4;
-}
-.myButton:active1 {
-	position:relative;
-	top:1px;
-}
-.myButton2 {
-	box-shadow:inset 0px 39px 0px -24px #ff8121;
-	background:linear-gradient(to bottom, #eb722c 5%, #dfe620 100%);
-	background-color:#eb722c;
-	border-radius:11px;
-	border:4px solid #ffffff;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:16px;
-	padding:9px 15px;
-	text-decoration:none;
-	text-shadow:0px 1px 50px #ffff0d;
-}
-.myButton:hover2 {
-	background:linear-gradient(to bottom, #dfe620 5%, #eb722c 100%);
-	background-color:#dfe620;
-}
-.myButton:active2 {
-	position:relative;
-	top:1px;
-}
-.myButton {
-	box-shadow:inset 0px 39px 0px -24px #1e1d2e;
-	background:linear-gradient(to bottom, #1a1a2b 5%, #262433 100%);
-	background-color:#1a1a2b;
-	border-radius:11px;
-	border:4px solid #ffffff;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:16px;
-	padding:9px 15px;
-	text-decoration:none;
-	text-shadow:0px 1px 50px #131633;
-}
-.myButton:hover {
-	background:linear-gradient(to bottom, #262433 5%, #1a1a2b 100%);
-	background-color:#262433;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
 }
